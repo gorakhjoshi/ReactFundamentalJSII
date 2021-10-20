@@ -1,5 +1,5 @@
 <!-- Using JSX -->
-<!-- 💯 interpolate className and children -->
+<!-- 💯 spread props -->
 
 <body>
   <div id="root"></div>
@@ -9,7 +9,8 @@
   <script type="text/babel">
     const children = 'Hello World'
     const className = 'container'
-    const element = <div className={className}>{children}</div>
+    const props = { children, className }
+    const element = <div {...props} />
     ReactDOM.render(element, document.getElementById('root'))
   </script>
 </body>
