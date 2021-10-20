@@ -1,5 +1,5 @@
 <!-- Creating custom components -->
-<!-- 💯 Use the prop-types package -->
+<!-- 💯 using React Fragments -->
 
 <body>
   <div id="root"></div>
@@ -21,10 +21,10 @@
     }
 
     const element = (
-      <div className="container">
+      <>
         <Message subject="World" greeting="Hello" />
         <Message subject="World" greeting="Goodbye" />
-      </div>
+      </>
     )
 
     ReactDOM.render(element, document.getElementById('root'))
